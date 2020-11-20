@@ -1,0 +1,14 @@
+logging:
+  level:
+    de.mbur.eex_api: debug
+
+spring:
+  profiles:
+    active: ${profile:test}
+
+eex-api:
+  base-url: https://api1.datasource.eex-group.com
+  event-path: /getEvent/json
+  username: {mandatory}
+  password: {mandatory}
+  csv-export-path: {mandatory}
